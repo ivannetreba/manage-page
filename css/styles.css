@@ -1,0 +1,76 @@
+:root {
+  --color-heading: #242D52;
+  --color-text: #C8CAD3; /* Try to implememt opacity (50.25%) late */
+  --color-tertiary: #979797;
+  --color-white: #FFFFFF;
+  --color-accent: hsl(12, 88%, 59%);
+  --color-body-light: #FFF0EC;
+  --color-body-medium: #FAFAFA;
+  --color-body-dark: #1D1E25;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+
+/* Typography */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Be Vietnam Pro', Inter, Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  line-height: 2;
+  color: var(--color-text); 
+}
+
+h1, h2, h3 {
+  color: var(--color-heading);
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -0.62px;
+  line-height: 1.5;
+}
+
+h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: -0.29px;
+  line-height: 1.5;
+}
+
+p {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 1.6rem;
+  }
+
+  h1 {
+    font-size: 5.6rem;
+    line-height: 6.4rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+    letter-spacing: -0.71px;
+    line-height: 4.4rem;
+  }
+}
