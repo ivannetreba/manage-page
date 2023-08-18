@@ -89,3 +89,22 @@ p {
     line-height: 4.4rem;
   }
 }
+
+
+/* Badges */
+
+.badge {
+  background: #F3603C;
+  border-radius: 40px;
+  flex-shrink: 0;
+  height: 40px;
+  width: 67px;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.badge__heading {
+  color: #FFF;
+  margin: 0;
+}
