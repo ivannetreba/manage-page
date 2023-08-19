@@ -102,9 +102,10 @@ p {
   font-size: 1.6rem;
   font-weight: 700;
   letter-spacing: -0.29px;
-  width: 67px;
+  min-width: 67px;
   height: 39px;
   text-align: center;
+  
 }
 
 
@@ -140,3 +141,32 @@ p {
 .btn--white:hover {
   color: rgba(243, 96, 60, 0.5);
 } /* think about using rgba in variables definition */
+
+
+/* Media */
+
+.media {
+  margin: 4.5rem 1.6rem;
+}
+
+.media__heading {
+  background: #FFF0EC;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  display: flex;
+  margin-bottom: 1.1rem;
+}
+
+.media__title {
+  margin: 0.5rem 1.5rem;
+  white-space: nowrap;
+  }
+
+@media screen and (min-width: 375px) {
+  .media__heading {
+    background: #FFF;
+  }
+  .media__body {
+    margin-left: 8.2rem;
+  }
+}
