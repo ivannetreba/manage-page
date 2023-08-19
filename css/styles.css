@@ -108,3 +108,37 @@ p {
   color: #FFF;
   margin: 0;
 }
+
+
+/* Button */
+
+.btn {
+  border-radius: 40px;
+  border: 0;
+  cursor: pointer;
+  font-size: 1.3rem;
+  font-weight: 700;
+  outline: 0;
+  padding: 1.5rem 3.3rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.btn--accent {
+  background: var(--color-accent);
+  color: var(--color-white);
+}
+
+.btn--white {
+  background: var(--color-white);
+  color: var(--color-accent);
+}
+
+.btn--accent:hover {
+  background: #F98F75;
+  color: #FCF6F5;
+} /* should I add these colors in palette? */
+
+.btn--white:hover {
+  color: rgba(243, 96, 60, 0.5);
+} /* think about using rgba in variables definition */
