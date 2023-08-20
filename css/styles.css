@@ -43,7 +43,6 @@ body {
   font-family: 'be_vietnam', Arial, Helvetica, sans-serif;
   font-size: 1.4rem;
   line-height: 2;
-  color: var(--color-text); 
 }
 
 h1, h2, h3 {
@@ -69,7 +68,7 @@ h3 {
 }
 
 p {
-  margin-top: 0;
+  margin: 0;
   opacity: 0.5025;
 }
 
@@ -168,5 +167,41 @@ p {
   }
   .media__body {
     margin-left: 8.2rem;
+  }
+}
+
+
+/* Testimonials */
+
+.testimonial {
+  margin: 1.6rem;
+}
+
+.testimonial__body {
+  background: #FAFAFA;
+  padding: 4rem 2.1rem;
+  padding-top: 6rem;
+  text-align: center;
+}
+
+.testimonial__title {
+  margin-top: 0;
+}
+
+.testimonial__img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 72px;
+  width: 72px;
+  position: relative;
+  transform: translateY(36px);
+}
+
+@media screen and (min-width: 1024px) {
+  .testimonial__body {
+    font-size: 1.6rem;
+    padding: 4rem;
+    padding-top: 6rem;
   }
 }
