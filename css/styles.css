@@ -205,3 +205,35 @@ p {
     padding-top: 6rem;
   }
 }
+
+
+/* Lists */
+
+.list {
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
+}
+
+
+/* Input group */
+
+.input-group {
+  display: flex;
+  flex-wrap: nowrap; 
+}
+
+.input__field {
+  border: 0;
+  border-radius: 22px;
+  background: #FFF;
+  margin-right: 0.6rem;
+  height: 4.4rem;
+  padding: 1.2rem 2.4rem;
+}
+
+.input__field::placeholder {
+  color: #8D8D8D;
+  font-size: 1.3rem;
+  letter-spacing: -0.1px;
+}
