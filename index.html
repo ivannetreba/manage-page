@@ -8,56 +8,24 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <section class="container features">
-      <div class="grid grid--1x2">
-        <header class="features__header">
-          <h2>
-            What's different about Manage?
-          </h2>
-          <p class="feature__description">
-            Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams. 
-          </p>
-        </header>
-        <div class="media">
-          <div class="media__heading">
-            <div class="badge">01</div>
-            <h3 class="media__title">
-              Track company-wide progress
-            </h3>
-          </div>
-          <div class="media__body">
-            <p>
-              See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.
-            </p>
-          </div>  
-        </div>
-        <div class="media">
-          <div class="media__heading">
-            <div class="badge">02</div>
-            <h3 class="media__title">
-              Advanced built-in reports
-            </h3>
-          </div>
-          <div class="media__body">
-            <p>
-              Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed.
-            </p>
-          </div>  
-        </div>
-        <div class="media">
-          <div class="media__heading">
-            <div class="badge">03</div>
-            <h3 class="media__title">
-              Everything you need in one place
-            </h3>
-          </div>
-          <div class="media__body">
-            <p>
-              Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution.            </p>
-          </div>  
-        </div>
-      </div>
-    </section>
+    <div class="container nav collapsible collapsible--expanded">
+      <svg class="icon nav__logo">
+        <use xlink:href="images/sprite.svg#logo"></use>
+      </svg>
+      <svg class="icon nav__hamburger collapsible__badge">
+        <use xlink:href="images/sprite.svg#icon-hamburger"></use>
+      </svg>
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__item"><a href="#">Pricing</a></li>
+        <li class="nav__item"><a href="#">Product</a></li>
+        <li class="nav__item"><a href="#">About Us</a></li>
+        <li class="nav__item"><a href="#">Careers</a></li>
+        <li class="nav__item"><a href="#">Community</a></li>
+      </ul>
+      <a target="_blank" href="#" class="btn btn--accent nav__btn">Get Started</a>
+    </div>
+    <!-- Make Collapsing -->
+    <script src="js/main.js"></script>
   </body>
 </html> 
 
@@ -78,10 +46,10 @@
   6. ^Input group for footer + mobile
   7. ^Icon group + mobile
 
-  8. Main block + mobile /problems with image and paragraph
-  9. Navbar + mobile
-  10. Different block + mobile
+  8. ^Main block + mobile /problems with image and paragraph
+  9. ^Navbar + mobile /problems with shrinking
+  10. ^Different block + mobile
   11. Testimonail block + mobile
-  12. Simplify block + mobile
+  12. ^Simplify block + mobile
   13. Footer + mobile
 -->

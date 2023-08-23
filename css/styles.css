@@ -72,6 +72,10 @@ p {
   opacity: 0.5025;
 }
 
+a {
+  text-decoration: none;
+}
+
 @media screen and (min-width: 1024px) {
   body {
     font-size: 1.6rem;
@@ -117,7 +121,7 @@ p {
   font-size: 1.3rem;
   font-weight: 700;
   outline: 0;
-  padding: 1.5rem 3.3rem;
+  padding: 1.3rem 3.2rem;
   text-decoration: none;
   white-space: nowrap;
 }
@@ -242,6 +246,29 @@ p {
   letter-spacing: -0.1px;
 }
 
+/* Collapsible */
+
+.collapsible__content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.collapsible__badge {
+  transform: rotate(0);
+  transition: transfortm 0.3s;
+}
+
+.collapsible--expanded .collapsible__badge {
+  transform: rotate(90deg);
+}
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+  opacity: 1;
+}
+
 
 /* Grids */
 
@@ -325,3 +352,109 @@ p {
     max-width: 35rem;
   }
 }
+
+/* Simplify block */
+
+.simplify {
+  background: var(--color-accent);
+}
+
+.simplify__header {
+  color: var(--color-white);
+}
+
+.simplify__btn {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+@media screen and (min-width: 585px) {
+  .simplify__btn {
+    text-align: right;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
+
+/* Navbar */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.nav__logo {
+  width: 110px;
+  height: 18px;
+}
+
+.nav__hamburger {
+  width: 25px;
+  height: 18px;
+}
+
+.nav__list {
+  font-size: 1.6rem;
+  font-weight: 700;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.nav__item {
+  padding: 2.4rem auto;
+}
+
+.nav__item > a {
+  color: var(--color-text);
+  transition: opacity 0.3s;
+}
+
+.nav__item > a:hover {
+  opacity: 0.5;;
+}
+
+.nav__btn {
+  display: none;
+}
+
+@media screen and (min-width: 585px) {
+  .collapsible__content {
+    max-height: 100vh;
+    opacity: 1;
+  }
+  
+  .nav {
+    flex-wrap: nowrap;
+  }
+
+  .nav__logo {
+    width: 147px;
+    height: 24px;
+    flex-shrink: 0;
+    margin-top: 1.5rem;
+  }
+
+  .nav__list {
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 1.3rem;
+    font-weight: 400;
+    justify-content: center;
+  }
+
+  .nav__item {
+    padding: 0 3.2rem;
+    white-space: nowrap;
+  }
+
+  .nav__btn {
+    display: block;
+  }
+
+  .nav__hamburger {
+    display: none;
+  }
+}
+
