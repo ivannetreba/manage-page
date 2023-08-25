@@ -231,16 +231,17 @@ a {
   flex-wrap: nowrap; 
 }
 
-.input__field {
+.input-field {
   border: 0;
   border-radius: 22px;
   background: #FFF;
   margin-right: 0.6rem;
   height: 4.4rem;
   padding: 1.2rem 2.4rem;
+  outline: none;
 }
 
-.input__field::placeholder {
+.input-field::placeholder {
   color: #8D8D8D;
   font-size: 1.3rem;
   letter-spacing: -0.1px;
@@ -458,3 +459,118 @@ a {
   }
 }
 
+
+/* Footer Block */
+
+.footer {
+  background: #1D1E25;
+}
+
+.footer__grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.footer__input-group {
+  margin: 5rem auto;
+  grid-column: 1 / -1;
+}
+
+.footer__input-field {
+  width: 239px;
+}
+
+.footer__list {
+  font-size: 1.5rem;
+  letter-spacing: -0.234px;
+  text-align: left;
+}
+
+.footer__list--right {
+  margin: 0 auto 5rem 3rem;
+}
+
+.footer__list--left {
+  margin: 0 3rem 5rem auto;
+}
+
+.footer__list a {
+  color: #FFFFFF;
+}
+
+.footer a:hover {
+  color: #F3603C;
+}
+
+.footer__media {
+  margin: 0 auto 5rem;
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-shrink: 1;
+}
+
+.footer__icon {
+  width: 32px;
+  height: 32px;
+  margin: 0 1.8rem;
+}
+
+.footer__logo {
+  width: 158px;
+  height: 26px;
+  margin: 0 auto 5rem auto;
+  grid-column: 1 / -1;
+}
+
+.footer__copyright {
+  color: #FFF;
+  letter-spacing: -0.203px;
+  opacity: 0.5025;
+  margin: 0 auto 3rem;
+  grid-column: 1 / -1;
+}
+
+@media screen and (min-width: 1024px) {
+  .footer__grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .footer__input-group {
+    margin: 6.5rem auto;
+    grid-area: 1/ 4 / 2 / 5;
+  }
+  
+  .footer__list--left {
+    margin: 6.2rem 3rem 0 4rem;
+    grid-area: 1 / 2 / 3 / 3;
+    justify-self: start;
+  }
+
+  .footer__list--right {
+    margin: 6.2rem auto 0 0;
+    grid-area: 1 / 3 / 3 / 4;
+    justify-self: start;
+  }
+
+  .footer__media {
+    margin: 0 auto 0 0;
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .footer__logo {
+    margin: 6.2rem auto 8.3rem 0;
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .footer__copyright {
+    margin: 0 0 0 auto;
+    grid-area: 2 / 4 / 3 / 5;
+  }
+
+  .footer__icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 1.3rem 0 0;
+  }
+}
