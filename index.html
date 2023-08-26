@@ -8,6 +8,103 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
+    <!-- Navbar -->
+    <div class="container nav collapsible collapsible--expanded">
+      <svg class="icon nav__logo">
+        <use xlink:href="images/sprite.svg#logo"></use>
+      </svg>
+      <svg class="icon nav__hamburger collapsible__badge">
+        <use xlink:href="images/sprite.svg#icon-hamburger"></use>
+      </svg>
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__item"><a href="#">Pricing</a></li>
+        <li class="nav__item"><a href="#">Product</a></li>
+        <li class="nav__item"><a href="#">About Us</a></li>
+        <li class="nav__item"><a href="#">Careers</a></li>
+        <li class="nav__item"><a href="#">Community</a></li>
+      </ul>
+      <a target="_blank" href="#" class="btn btn--accent nav__btn">Get Started</a>
+    </div>
+    <!-- There is a bug. During shrinking list doesn't shrink and makes overfloy. -->
+
+    <!-- Main block -->
+    <section class="container main">
+      <div class="grid grid--1x2">
+        <div>
+          <svg class="main__image">
+            <use xlink:href="images/sprite.svg#illustration-intro"></use>
+          </svg>
+        </div>  
+        <div class="main__body">
+          <h1 class="main__header">
+            Bring everyone together to build better products.
+          </h1>
+          <p class="main__description">
+            Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.
+          </p>
+          <a target="_blank" href="#" class="btn btn--accent">Get Started</a>
+        </div>
+      </div>
+    </section>
+    <!--
+      TODO: 
+      1. Problem with image size and shrinking
+      2. Problem with <p> alignment while transition to mobile
+    -->
+
+    <!-- Features block -->
+    <section class="container features">
+      <div class="grid grid--1x2">
+        <header class="features__header">
+          <h2>
+            What's different about Manage?
+          </h2>
+          <p class="feature__description">
+            Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams. 
+          </p>
+        </header>
+        <div class="media">
+          <div class="media__heading">
+            <div class="badge">01</div>
+            <h3 class="media__title">
+              Track company-wide progress
+            </h3>
+          </div>
+          <div class="media__body">
+            <p>
+              See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.
+            </p>
+          </div>  
+        </div>
+        <div class="media">
+          <div class="media__heading">
+            <div class="badge">02</div>
+            <h3 class="media__title">
+              Advanced built-in reports
+            </h3>
+          </div>
+          <div class="media__body">
+            <p>
+              Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed.
+            </p>
+          </div>  
+        </div>
+        <div class="media">
+          <div class="media__heading">
+            <div class="badge">03</div>
+            <h3 class="media__title">
+              Everything you need in one place
+            </h3>
+          </div>
+          <div class="media__body">
+            <p>
+              Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution.            </p>
+          </div>  
+        </div>
+      </div>
+    </section>
+    
+    <!-- Testimonials block -->
     <section class="block-testimonials">
       <h2>What they’ve said</h2>
       <div class="testimonials-set">
@@ -45,6 +142,63 @@
       </div>
       <a target="_blank" href="#" class="btn btn--accent testimonials__btn">Get Started</a>
     </section>
+
+    <!-- Simplify block -->
+    <section class="simplify">
+      <div class="container grid grid--1x2">
+        <header class="simplify__header">
+          <h2>
+            Simplify how your team works today.
+          </h2>
+        </header>
+        <div class="simplify__btn">
+          <a target="_blank" href="#" class="btn btn--white">Get Started</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container grid footer__grid">
+        <div class="input-group footer__input-group">
+          <input type="text" class="input-field footer__input-field" placeholder="Updates in your inbox…">
+          <button class="btn btn--accent">Go</button>
+        </div>
+        <ul class="list footer__list footer__list--left">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+        <ul class="list footer__list footer__list--right">
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Community</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <div class="footer__media">
+          <svg class="footer__icon">
+            <use xlink:href="images/media-sprite.svg#icon-facebook"></use>
+          </svg>
+          <svg class="footer__icon">
+            <use xlink:href="images/media-sprite.svg#icon-youtube"></use>
+          </svg>
+          <svg class="footer__icon">
+            <use xlink:href="images/media-sprite.svg#icon-twitter"></use>
+          </svg>
+          <svg class="footer__icon">
+            <use xlink:href="images/media-sprite.svg#icon-pinterest"></use>
+          </svg>
+          <svg class="footer__icon">
+            <use xlink:href="images/media-sprite.svg#icon-instagram"></use>
+          </svg>
+        </div>
+          <svg class="footer__logo">
+            <use xlink:href="images/sprite.svg#white-logo"></use>
+          </svg>
+        <p class="footer__copyright">Copyright 2020. All Rights Reserved</p>
+      </div>
+    </footer>
+
     <!-- Make Collapsing -->
     <script src="js/main.js"></script>
   </body>
@@ -58,19 +212,4 @@
 
 <!-- TODO: Watch video about positioning -->
 
-<!--
-  1. ^Badges + mobile
-  2. ^Buttons + mobile
-  3. ^Media + mobile
-  4. ^Testimonails + mobile
-  5. ^Lists for footer and navbar + mobile
-  6. ^Input group for footer + mobile
-  7. ^Icon group + mobile
-
-  8. ^Main block + mobile /problems with image and paragraph
-  9. ^Navbar + mobile /problems with shrinking
-  10. ^Different block + mobile
-  11. ^Simplify block + mobile
-  12. ^Footer + mobile 
-  13. Testimonail block + mobile https://x.com/html5css3_dv/status/1694121016296132946?s=46&t=4KyiWnZ-RF90jwAaBFwxvw
--->
+<!-- https://x.com/html5css3_dv/status/1694121016296132946?s=46&t=4KyiWnZ-RF90jwAaBFwxvw -->
