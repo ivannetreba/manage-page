@@ -404,7 +404,7 @@ a {
 }
 
 .main__description {
-  margin: 1rem 2.6rem 3rem;
+  margin: 1rem 2.6rem 3rem 0;
   max-width: 35rem;
 }
 
